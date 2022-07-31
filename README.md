@@ -11,3 +11,7 @@
 3. apache tomcat
 4. 한글 깨지는 문제
 5. mysql
+
+### 참고자료
+
+https://www.javatpoint.com/crud-in-jsp
