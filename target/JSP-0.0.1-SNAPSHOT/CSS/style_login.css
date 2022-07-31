@@ -1,0 +1,551 @@
+@charset "UTF-8";
+body {
+    margin: 0px;
+}
+
+.logo{
+    height: 1.3rem;
+    padding-left: 2.2rem;
+    padding-top: .7rem;
+}
+
+.global_logo{
+    float: left;
+    width: 1.25rem;
+    height: 1.25rem;
+    margin-right: 0.15rem;
+}
+
+.logo, .menu{
+    float: left;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.menu{
+    padding-top: .1rem;
+    width:85%;
+    justify-content: space-between;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;    
+    backdrop-filter: blur(30px);
+    color: #222222;
+    height: 56px;
+    z-index: 501;
+}
+
+.left-menu {
+    display: flex;
+    /* align-content:left; */
+}
+
+.left-menu li{
+    float:left;
+}
+
+.left-menu a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #222222;
+    
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: 'Beausite-Regular',sans-serif;
+}
+
+.left-menu li{
+    list-style-type: none;
+}
+
+.right-menu{
+    display: flex;
+    /* align-content: right;
+    margin-block-start: .1rem;
+    padding-left: 8rem; */
+    margin-left: auto;
+}
+
+.right-menu a{
+    text-decoration: none;
+    margin-right: 20px;
+    color: #222222;
+
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1;
+    font-family: 'Beausite-Regular',sans-serif;
+}
+
+.right-menu li{
+    float: left;
+    list-style-type: none;
+}
+
+/* login-form */
+.login-form{
+    width: 440px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    /* padding: 20px; */
+    padding-top: 10rem;
+    text-align: center;
+    border: none;
+    font-size: 1rem;
+}
+
+.text-field {
+    padding: 0 1rem;
+    height: 2.5rem;
+    width: 405px;
+    margin-bottom: 1.25rem;
+    border-color: #222222;
+    border: 1px solid #f2f2f2;
+}
+
+.option{ /* 로그인 상태 유지 체크 div */
+    text-align: start;
+    font-size: 12.25px;
+}
+
+.button-area{
+    padding: 1.5rem 0 2rem 0;
+}
+
+.submit-btn {
+    border: none;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    background-color: #222222;
+    color: white;
+    border-radius: 0.25rem;
+    height: 2.8rem;
+}
+
+.util a{
+    padding-left: 13px;
+    padding-right: 15px;
+    /* flex: auto; */
+    height: 40px;
+    font-size: 12.25px;
+    line-height: 40px;
+    color: #999;
+    text-align: center;
+    text-decoration: none;
+}
+
+.util-border{
+    border-right: 1px solid #f2f2f2;
+}
+
+/* register form */
+.register-form{
+	padding-top: 15rem;
+    margin-right: auto;
+    margin-left: auto;
+    width: 440px;
+}
+
+.row{
+	padding: 1rem 0;
+	width: 100%;
+	float: left;
+	color: #222;
+	font-size: .85rem;
+}
+
+.register .register-form tr td input{
+	width: 100%;
+	font-size: .85rem;
+	border: 1px solid #f2f2f2;
+	height: 2.55rem;
+    padding: 0 1rem;
+}
+
+.reg_btn{
+	width: 100%;
+	margin-top: 1rem;
+	background-color: #222;
+    color: white;
+    font-size: .85rem;
+    padding: 0.7rem 1rem;
+    border-radius: .25rem;
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #222;
+    color: white;
+    width: 100%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+  
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 1.25rem;
+    font-weight: 500;
+    padding-top: 1.25rem;
+    padding-right: 2.5rem;
+}
+  
+.modal-header {
+    padding-top: 1.25rem;
+    padding-left: 2.5rem;
+    background-color: #222;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
+    /* justify-content: space-between; */
+}
+  
+.modal-body {
+    color: white;
+    background-color: #222;
+    padding-top: 8.125rem;
+    text-align: center;
+}
+  
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #222;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0} 
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0} 
+    to {opacity: 1}
+}
+
+/* 회원 정보 수정 */
+.mem-page{
+	padding-top: 7rem;
+	padding-bottom: 7rem;
+	padding-right: 3rem;
+	padding-left: 3rem;
+	color: #222;
+	margin-left: 1.25rem;
+	margin-right: 1.25rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between !important;
+}
+
+.mem-menu{
+	color: #222;
+}
+
+.mem-name{
+    margin-bottom: 2.5rem;
+    
+	font-size: 1.5rem !important;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.mem-submenu{
+	font-size: 1rem;
+    line-height: 1;
+    margin-bottom: 3rem;
+}
+
+.logout-btn{
+	border: 1px solid #f2f2f2;
+	color: #999;
+	background-color: #fff;
+	font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: .25rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.mem-detail{
+	padding-right: 4.9rem;
+	padding-left: 1.25rem;
+}
+
+.info-header{
+	font-weight: 600;
+    line-height: 1.2;
+	font-size: 1.3rem;
+	padding-bottom: 1.5rem;
+	border-bottom: 1px solid #eee;
+	margin-bottom: 1rem;
+}
+
+.info{
+	font-size: .85rem;
+	color: #999;
+	padding: 1rem;
+	text-align: left;
+	line-height: 18px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.info-input{
+	margin-left: 7.5rem;
+	width: 30rem;
+	height: 2.55rem;
+	padding: 0 1rem;
+	font-size: .85rem;
+	border: 1px solid #f2f2f2;
+	border-radius: 0.25rem;
+	vertical-align: middle;
+}
+
+.mem-btn{
+	display: flex;
+	gap: .5rem;
+	justify-content: center;
+}
+
+.my-black-btn{
+	font-size: .85rem;
+	width: 12rem;
+	background-color: #222;
+    color: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: .25rem;
+    border: 1px solid #222;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.my-white-btn{
+	font-size: .85rem;
+	width: 12rem;
+	background-color: #fff;
+    color: #222;
+    padding: 0.6rem 1rem;
+    border-radius: .25rem;
+    border: 1px solid #222;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+.my-red-btn{
+	border: 1px solid #f2f2f2;
+	color: #fff;
+	background-color: #222;
+	font-size: 0.75rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: .25rem;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+/* basket */
+.basket-content{
+	padding-top: 7rem;
+	padding-bottom: 10rem;
+	padding-left: 4rem;
+	padding-right: 4rem;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	font-size: .85rem;
+	color: #222;
+}
+
+.sel-all{
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	padding: 1rem;
+    border-top: 1px solid #f2f2f2;
+}
+
+.chk-all{
+	margin: 0 38rem 0 0;
+}
+
+.sel-detail{
+	padding: 1.5rem 1rem;
+    border-top: 1px solid #f2f2f2;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 90px;
+}
+
+.sel-content{
+	margin-right: 30rem;
+	font-weight: 600;
+}
+
+.sel-count{
+	margin-top: 1rem;
+	width: 4rem;
+	border: 1px solid #222;
+	font-weight: 400;
+    font-size: 12px;
+    line-height: 29px;
+    text-align: center;
+    min-width: 28px;
+    height: 1.5rem;
+    padding: 0 5px;
+}
+
+.sel-del{
+	text-decoration: none;
+	color: #222;
+	top: 1.5rem;
+    left: 38rem;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+
+.ord-sec{
+	border-top: 1px solid #f2f2f2;
+	color: #999;
+	flex: 0 0 auto;
+	padding-top: .5rem;
+	padding-right: 1rem;
+	paddin-left: 1rem;
+}
+
+.ord-price{
+	padding: .5rem 0;
+}
+
+.ord-deliv{
+	padding: .5rem 0;
+}
+
+.ord-total{
+	font-size: 1.05rem;
+	color: #222;
+	margin-top: .5rem;
+	margin-bottom: 1.7rem;
+}
+
+
+/* footer */
+#footer {
+    padding-top: 13.75rem;
+    padding-right: 3rem !important;
+    padding-left: 3rem !important;
+}
+
+.footer{
+    display: flex;
+}
+
+.footer .footer-menu{
+    display: flex;
+}
+
+#footer .footer .footer-logo{
+    width: 20%;
+}
+
+.footer-width{
+    width: 28%;
+    min-width: 80px;
+}
+
+.navi-list{
+    margin-right: 5rem;
+    margin-top: 0;
+}
+
+.navi-title{
+    font-size: .9rem;
+    margin-bottom: 0.25rem;
+    text-transform: uppercase;
+    opacity: 0.25;
+}
+
+ul li {
+    list-style: none;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 600; /* Sit on top */
+    left: calc(100vw - 360px);
+    top: 0;
+    width: 360px;
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: #222; /* Fallback color */
+   /*background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+#footer .footer-menu .navi-item a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.3;
+    color: #222;
+    text-decoration: none;
+}
+
+#footer .footer-menu .navi-item img {
+    width: 1.5rem;
+    margin-top: -0.125rem;
+    margin-left: 0.125rem;
+    height: auto;
+    vertical-align: middle;
+}
+
+#footer .sub-info {
+    padding-top: 6.25rem;
+    padding-bottom: 3.125rem;
+}
+
+.sub-info{
+    padding: 0;
+    margin: 0;
+    opacity: 0.25;
+}
+
+#footer .sub-info li {
+    margin-right: 1.3rem;
+    display: inline-block;
+    font-size: .9rem;
+}
+
+#footer .sub-info li.agreement {
+    border-bottom: 1px solid #999;
+}
+
+#footer .sub-info li a {
+    text-decoration: none;
+    color: #222;
+}
